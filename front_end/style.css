@@ -1,0 +1,121 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+#mirror {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: scroll; /* 변경된 부분: overflow를 scroll로 변경 */
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+#exerciseInfo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#exerciseName {
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+#exerciseSelectorContainer {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: #333;
+    border: 1px solid #4caf50;
+    padding: 10px;
+    z-index: 1;
+}
+
+#exerciseSelector {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#exerciseSelector:hover {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#exerciseCount {
+    margin-right: 10px;
+}
+
+#exerciseBar {
+    width: 200px;
+    height: 20px;
+    background-color: #333;
+    margin-right: 10px;
+}
+
+#exerciseBarFill {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+#exerciseButton {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#elapsedTime {
+    margin-left: 10px;
+}
+
+#userData {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-left: 10px; /* 변경된 부분: margin-left 값을 조절 */
+}
+
+#userName {
+    margin-right: 10px;
+    padding: 5px;
+    margin-left: auto; /* 변경된 부분: margin-left 값을 auto로 변경 */
+}
+
+#sendDataButton {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sendDataButton:hover {
+    background-color: #45a049;
+}
