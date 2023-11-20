@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헬스 미러</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="mirror">
+        <div id="header">
+            <div id="currentTime"></div>
+            <div id="elapsedTime"></div>
+        </div>
+        <div id="exerciseInfo">
+            <div id="exerciseName">
+                <h2 onclick="toggleExerciseSelector()">운동 이름: <span id="selectedExercise">휴식</span></h2>
+                <div id="exerciseSelectorContainer">
+                    <select id="exerciseSelector" onchange="updateSelectedExercise()">
+                        <option value="REST">REST</option>
+                        <option value="DEAD">DEAD</option>
+                        <option value="벤치 프레스">PUSH</option>
+                        <option value="데드리프트">dumbbell</option>
+                        <option value="숄더 프레스">Shoulder</option>
+                    </select>
+                </div>
+            </div>
+            <div id="exerciseCount">운동 횟수: 0</div>
+            <div id="exerciseBar">
+                <div id="exerciseBarFill"></div>
+            </div>
+            <button id="exerciseButton" onclick="startExercise()">운동 횟수 +1</button>
+
+            <!-- 사용자 이름 입력과 데이터 전송 버튼 추가 -->
+            <div id="userData">
+                <input type="text" id="userName" placeholder="사용자 이름">
+                <button id="sendDataButton" onclick="sendExerciseData()">데이터 전송</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
