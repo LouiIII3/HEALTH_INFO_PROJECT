@@ -1,6 +1,5 @@
 let exerciseCount = 0;
 let exerciseStartTime = null;
-
 function updateTime() {
     const currentTimeElement = document.getElementById('currentTime');
     const now = new Date();
