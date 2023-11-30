@@ -137,7 +137,7 @@ function sendExerciseData() {
     };
 
     // 서버에 데이터 전송
-    fetch('http://localhost:8080/exercise/api/submit-exercise-data', {
+    fetch('내 도메인 주소로 할것/api/submit-exercise-data', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
