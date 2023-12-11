@@ -9,6 +9,7 @@ function updateTime() {
     currentTimeElement.textContent = `현재 시간: ${hours}:${minutes}:${seconds}`;
 }
 
+//운동시간을 알아내기 위함
 function updateElapsedTime() {
     const elapsedTimeElement = document.getElementById('elapsedTime');
     if (exerciseStartTime) {
